@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Telling... </title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Syne' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="topbar">
+            <div class="search-container">
+                <form>
+                  <input type="text" id="search" class="form-control search-form" placeholder="What do you want to read today ?" />
+                  <span class="input-group-btn" style="width:39px">
+                    <button id="search-this" type="button" class="pull-right btn btn-default search-btn">
+                        <i class="fa fa-search" style="font-size:20px; padding-right: 5px;"></i>
+                    </button>
+                  </span>
+                </form>
+            </div>
+            <div class="topbar-left">
+                <a href="#Home"><img src="textwhite.png" alt="logo" id="logo"></a>
+            </div>
+            <div class="topbar-right">
+                <a href="#/Home"><i class="material-icons w3-xlarge" id="h">home</i></a>
+                <a href="#/Feed"><span class="material-icons" id="f">article</span></a>
+                <a href="#/Acc" id="acc"><span class="material-icons" id="ac">account_circle</span></a>
+            </div>
+        </div>
+        <img src="cov.jpg" alt="coverPage" id="covp"> 
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p id="hpop">REGISTER TO TELLING</p>
+                    <div class="input-field">
+                        <input type="email" placeholder="E-mail" id="penname" name="penname">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" id="password" name="password">
+                    </div>
+                    <div>
+                        <button id="btn4" class="btn4">Register</button>
+                    </div>
+                <div id="hr1"><span>OR</span></div>
+                <p id="hpop">LOGIN TO TELLING</p>
+                    <div class="input-field">
+                      <input type="email" placeholder="Penname(Username)" id="penname" name="penname">
+                    </div>
+                    <div class="input-field">
+                      <input type="password" placeholder="********" id="password" name="password">
+                    </div>
+                    <button id="btn2" class="btn2">Cancel</button>
+                    <button id="btn3" class="btn3">Login</button>
+            </div>
+        </div>
+        <a href="#popup1" id="create">          
+            <div class="create" >
+                <i class="fas fa-pen-square" id="cr"></i>
+                <span id="tell">TELL YOUR STORY</span>
+            </div>
+        </a>
+        <div id="myModal2" class="modal2">
+            <div class="modal2-content">
+                <div id="hr2"><span>TITLE</span></div>
+            </div>
+        </div>
+        <script> 
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("acc");
+
+            var modal2 = document.getElementById("myModal2");
+            var btn2 = document.getElementById("create");
+            
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            btn2.onclick = function() {
+                modal2.style.display = "block";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal || event.target == modal2 ) {
+                    modal.style.display = "none";
+                    model2.style.display = "none"
+                }
+            }
+        </script>
+
+    </body>
+</html>
