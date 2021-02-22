@@ -68,7 +68,17 @@
         </a>
         <div id="myModal2" class="modal2">
             <div class="modal2-content">
-                <div id="hr2"><span>TITLE</span></div>
+                <div id="hr2">
+                    <form>
+                        <input type="text"  placeholder="TITLE" id="tt" name="title">
+                    </form>
+                </div>
+                <textarea id="textarea" name="body" rows="10" cols="80">Tell your story here !</textarea>
+                <div id="hr2"></div>
+                <input type="text"  placeholder="+ Add hashtag for this story" id="ht" name="title">
+                <div id="hr2"></div>
+                <button id="btn5" class="btn5">Cancel</button>
+                <button id="btn6" class="btn6">Next</button>
             </div>
         </div>
         <script> 
@@ -87,9 +97,9 @@
             }
 
             window.onclick = function(event) {
-                if (event.target == modal || event.target == modal2 ) {
+                if (event.target == modal | event.target == modal2 ) {
                     modal.style.display = "none";
-                    model2.style.display = "none"
+                    modal2.style.display = "none"
                 }
             }
         </script>

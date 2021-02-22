@@ -40,16 +40,16 @@ input {
     top: 40%;
 }
 
-input:hover {
-    background-color: #faefef;
-}
-
 #search {
     border: 1px;
     font-size: 16px;
     font-family: Poppins;
     padding: 15px;
     text-align: center;
+}
+
+#search:hover {
+    background-color: #faefef;
 }
 
 .search-btn {
@@ -364,7 +364,7 @@ a {
 .modal2-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 35px;
+    padding: 0px;
     border: 1px solid rgb(230, 230, 230);
     width: 70%;
     min-height: 30%;
@@ -375,18 +375,109 @@ a {
     width: 100%; 
     border-bottom: 1px solid #dbdbdb; 
     line-height: 0.1em;
-    margin: 50px 75px 35px 0px; 
+    position: relative;
+    top: 35%;
 } 
- 
-#hr2 span { 
-    font-size: 18px;
+
+#tt {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-top: 7%;
+    padding-left: 9%;
+    border: none;
+    color: none;
+    font-size: 22px;
     font-family: Poppins;
     font-weight: 700;
-    letter-spacing: 0.25mm;
-    color: #000000;
-    background:#fff;
-    padding: 0 20px 0 20px; 
+    letter-spacing: 0.2em;
 }
+
+#tt:focus {
+    outline: none;
+}
+
+#tt:hover {
+    color: none;
+}
+
+textarea {
+    padding-left: 9%;
+    padding-top: 4%;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    font-family: Poppins;
+    cursor:pointer;
+}
+
+.btn5 {
+    padding:5px 30px;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Poppins;
+    font-size:14px;
+    font-weight:600;
+    outline: none;
+}
+
+.btn5:hover {
+    background:#f2f2a0;
+    border: 1px solid beige;
+}
+
+#btn5 {
+    margin-top: 2%;
+    margin-left: 70%;
+    margin-bottom: 2%;
+}
+
+.btn6 {
+    padding:5px 35px;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Poppins;
+    font-size:14px;
+    font-weight:600;
+    outline: none;
+}
+
+.btn6:hover {
+    background:#f2f2a0;
+    border: 1px solid beige;
+}
+
+#btn6 {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+#ht {
+    color: #b0c2c2;
+    font-size: 14px;
+    font-family: Poppins;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 9%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+
+
+
+
+
+
 
 
 
